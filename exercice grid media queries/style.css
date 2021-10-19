@@ -1,0 +1,49 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2rem 0;
+}
+
+.v-un{
+    background-color: blue;
+grid-column: 2 / span 4;
+height: 6rem;
+}
+
+.v-deux{
+    background-color: blue;
+    grid-column: 8 / span 4;
+    height: 6 rem;
+}
+
+.v-trois{
+    border: solid black 2px;
+    grid-column: 2 / span 4;
+    height: 6rem;
+}
+
+.v-quatre{
+    border: solid black 2px;
+    grid-column: 8 / span 4;
+    height: 6rem;
+}
+
+.v-cinq{
+    border: solid black 2px;
+    grid-column: 2 / span 4;
+    height: 6rem;
+}
+
+.v-six{
+    border: solid black 2px;
+    grid-column: 8 / span 4;
+    height: 6rem;
+}
+
+@media screen and (max-width:600px){
+    [class*="v-"]{
+        background-color:blueviolet;
+        height: 10rem;
+        grid-column: 2 / span 10;
+    }
+}
