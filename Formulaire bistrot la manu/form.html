@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--ICI CDN BOOTSRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <title>Bistrot La Manu</title>
+</head>
+
+<body>
+    <h1 class="text-center display-1">
+        <span class="fw-bold">Bistrot</span>
+        "La Manu"
+    </h1>
+
+    <div class="row justify-content-center">
+        <div
+            class="contenant align-items-center row col-lg-8 pt-lg-4 shadow bg-body rounded justify-content-between">
+            <div class="image col d-none d-lg-block">
+                <img src="Recette-tartiflette-legere.jpg" alt="image Tartiflette" class="img-fluid">
+            </div>
+            <div class="formulaire col">
+                <form method=GET>
+                    <div class="mb-3">
+                        <label for="Nom">Nom</label>
+                        <input type="Text" class="form-control" value="" id required="Nom" placeholder="DOE" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="Prénom">Prénom</label>
+                        <input type="Text" class="form-control" value="" id="Nom" placeholder="John" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Courriel">Courriel</label>
+                        <input type="email" class="form-control" value="" id="Courriel" aria-describedby="emailHelp"
+                            placeholder="john.doe@courriel.fr" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Choix du plat">Choix du plat</label>
+                        <select id="Choix du plat" class="form-select">
+                            <option selected disabled>--Choix du plat--</option>
+                            <option value="1">Tartiflette</option>
+                            <option value="2">rôti de boeuf</option>
+                            <option value="3">Escalope de dinde</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Choix de l'accompagnemen">Choix du plat</label>
+                        <select id="Choix de l'accompagnement" class="form-select">
+                            <option selected disabled>--Choix de l'accompagnement--</option>
+                            <option value="1">Pâtes</option>
+                            <option value="2">Frites</option>
+                            <option value="3">Légumes</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="commentaires">
+                            Commentaires
+                            <span class="text-secondary">(ex: cuisson, Allergies...)</span>
+                        </label>
+                        <br />
+                        <textarea name="commentaires" id="commentaires" class="col-12">
+
+                            </textarea>
+                    </div>
+
+
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <input type="checkbox" class="form-check-input" value="" id="exampleCheck1" required>
+                            <label for="exampleCheck1">Je promets de ne pas gaspiller : J'ai
+                                faim
+                                !!!
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <button type="submit"
+                            class="btn btn-light text-secondary mb-lg-4 mb-2 border border-dark col-lg-5 col-5">Commander</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row bg-secondary text-light justify-content-center mt-lg-5 mt-2 pb-lg-5 pb-2">
+        <p class="pied col text-center">Design for LHP7</p>
+    </div>
+
+
+    <!--ICI SCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
