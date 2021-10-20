@@ -21,27 +21,27 @@
     <div class="row justify-content-center">
         <div
             class="contenant align-items-center row col-lg-8 pt-lg-4 shadow bg-body rounded justify-content-between">
-            <div class="image col d-none d-lg-block">
-                <img src="Recette-tartiflette-legere.jpg" alt="image Tartiflette" class="img-fluid">
+            <div class="image col d-none d-lg-block mb-4">
+                <img src="pexels-rajesh-tp-1624487.jpg" alt="image Tartiflette" class="img-fluid">
             </div>
             <div class="formulaire col">
                 <form method=GET>
                     <div class="mb-3">
                         <label for="Nom">Nom</label>
-                        <input type="Text" class="form-control" value="" id required="Nom" placeholder="DOE" >
+                        <input type="Text" class="form-control" value="" id required="Nom" name="Nom" placeholder="DOE" >
                     </div>
                     <div class="mb-3">
                         <label for="Prénom">Prénom</label>
-                        <input type="Text" class="form-control" value="" id="Nom" placeholder="John" required>
+                        <input type="Text" class="form-control" value="" id="Prénom" name="Prénom" placeholder="John" required>
                     </div>
                     <div class="mb-3">
                         <label for="Courriel">Courriel</label>
-                        <input type="email" class="form-control" value="" id="Courriel" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" value="" id="Courriel" name="Courriel" aria-describedby="emailHelp"
                             placeholder="john.doe@courriel.fr" required>
                     </div>
                     <div class="mb-3">
                         <label for="Choix du plat">Choix du plat</label>
-                        <select id="Choix du plat" class="form-select">
+                        <select id="Choix du plat" class="form-select" name="Choix plat">
                             <option selected disabled>--Choix du plat--</option>
                             <option value="1">Tartiflette</option>
                             <option value="2">rôti de boeuf</option>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="Choix de l'accompagnemen">Choix du plat</label>
-                        <select id="Choix de l'accompagnement" class="form-select">
+                        <select id="Choix de l'accompagnement" class="form-select" name="Choix accompagnement">
                             <option selected disabled>--Choix de l'accompagnement--</option>
                             <option value="1">Pâtes</option>
                             <option value="2">Frites</option>
